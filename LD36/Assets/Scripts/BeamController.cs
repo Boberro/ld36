@@ -53,6 +53,10 @@ public class BeamController : MonoBehaviour {
 			}
 			grabbed.Clear ();
 		}
+
+		if ((BeamStatus == BeamStatus.grabbed) && (grabbed.Count == 0)) {
+			BeamStatus = BeamStatus.idle;
+		}
 	}
 
 	void FixedUpdate () {
