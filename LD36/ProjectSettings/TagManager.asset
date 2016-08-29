@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Terrain
+  - Building Block
+  - Beam
+  - Ufo
+  - Display
   layers:
   - Default
   - TransparentFX
@@ -13,11 +18,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - Building Blocks
+  - Beam
+  - Ufo
+  - Display
   - 
   - 
   - 
