@@ -24,10 +24,10 @@ public class BeamController : MonoBehaviour {
 	public List<BuildingBlockController> highlighted = new List<BuildingBlockController> ();
 	public List<BuildingBlockController> grabbed = new List<BuildingBlockController> ();
 
-	UfoController ufoController;
+//	UfoController ufoController;
 
 	void Start () {
-		ufoController = GetComponentInParent<UfoController> ();
+//		ufoController = GetComponentInParent<UfoController> ();
 
 		GetComponent<MeshRenderer> ().enabled = false;
 

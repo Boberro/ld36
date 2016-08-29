@@ -85,12 +85,12 @@ public class BuildingBlockController : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.tag == "Terrain") {
 			audioSource.PlayOneShot (rockOnGroundClip);
-			if (Mathf.Abs (rigidBody.velocity.magnitude) > 0.01f) {
+			if (Mathf.Abs (rigidBody.velocity.magnitude) > 0.05f) {
 				audioSource.Play ();
 			}
 		} else if (collision.gameObject.tag == "Building Block") {
 			audioSource.PlayOneShot (rockOnRockClip);
-			if (Mathf.Abs (rigidBody.velocity.magnitude) > 0.01f) {
+			if (Mathf.Abs (rigidBody.velocity.magnitude) > 0.05f) {
 				audioSource.Play ();
 			}
 		}
